@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="539.0" prefWidth="966.0" stylesheets="@bg.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.workshop.gui.Addteam">
+   <children>
+      <Label layoutX="47.0" layoutY="80.0" prefHeight="18.0" prefWidth="92.0" text="nom_team" />
+      <Label layoutX="54.0" layoutY="119.0" prefHeight="18.0" prefWidth="92.0" text="nb_joueurs" />
+      <Label layoutX="54.0" layoutY="154.0" prefHeight="18.0" prefWidth="92.0" text="about" />
+      <Label layoutX="54.0" layoutY="189.0" prefHeight="18.0" prefWidth="92.0" text="logo" />
+      <TextField fx:id="tfnomteam" layoutX="146.0" layoutY="77.0" />
+      <TextField fx:id="tfnbjoueur" layoutX="146.0" layoutY="115.0" />
+      <TextField fx:id="tfabout" layoutX="146.0" layoutY="150.0" />
+      <TextField fx:id="tflogo" layoutX="146.0" layoutY="185.0" />
+      <TableView fx:id="tableteam" layoutX="370.0" layoutY="39.0" prefHeight="310.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="tnomteam" prefWidth="75.0" text="nom_team" />
+          <TableColumn fx:id="tnbjoueur" prefWidth="75.0" text="nb_joueur" />
+            <TableColumn fx:id="tabout" prefWidth="75.0" text="about" />
+        </columns>
+      </TableView>
+      <Button layoutX="205.0" layoutY="255.0" mnemonicParsing="false" onAction="#addteam" text="ADD" />
+      <Button layoutX="129.0" layoutY="255.0" mnemonicParsing="false" onAction="#updateteam" text="update" />
+      <ImageView fx:id="imageteam" fitHeight="77.0" fitWidth="74.0" layoutX="184.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="retour" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnretour" text="Back" />
+      <ImageView fx:id="uploadt" fitHeight="34.0" fitWidth="41.0" layoutX="308.0" layoutY="182.0" onMouseClicked="#uploadimageteam" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/download.png" />
+         </image>
+      </ImageView>
+       <Button fx:id="displayStatisticsButton" layoutX="473.0" layoutY="446.0" onAction="#displayTeamStatistics" text="Display Statistics" />
+      <Button fx:id="clear" layoutX="72.0" layoutY="255.0" mnemonicParsing="false" onAction="#clear" text="clear" />
+
+   </children>
+</AnchorPane>

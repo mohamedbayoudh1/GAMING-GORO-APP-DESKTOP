@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="poi-3.0-rc4-20070503">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../poi-3.0-rc4/poi-3.0-rc4-20070503.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../poi-3.0-rc4/poi-contrib-3.0-rc4-20070503.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../poi-3.0-rc4/poi-scratchpad-3.0-rc4-20070503.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

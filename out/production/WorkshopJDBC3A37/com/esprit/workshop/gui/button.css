@@ -1,0 +1,79 @@
+#btnAjouter {
+    -fx-background-color: #9747b6;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+    -fx-cursor: hand;
+}
+#t
+{
+    -fx-background-color: #c7c5c5;
+}
+#btnAjouter:hover {
+    -fx-background-color: #ff0a0a;
+    -fx-background-insets: 0 0 -1 0;
+    -fx-background-radius: 0;
+    -fx-translate-y: -1;
+    -fx-translate-x: 1;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+    -fx-border-width: 0.5;
+    -fx-border-color: #d40000;
+}
+
+#btnAjouter:pressed {
+    -fx-background-color: #1a1a1a;
+    -fx-translate-y: 1;
+    -fx-translate-x: -1;
+    -fx-background-insets: 0 0 1 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+    -fx-border-width: 0.5;
+    -fx-border-color: #bd2a2a;
+}
+
+#btnAjouter:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}
+
+#btnAjouter .label {
+    -fx-translate-y: -1px;
+}
+
+#btnAjouter:active .label {
+    -fx-translate-y: 1px;
+}
+
+#btnAjouter:disabled .label {
+    -fx-opacity: 0.5;
+}
+
+#btnAjouter:enabled {
+    -fx-background-color: linear-gradient(#8e2b2b, #333333);
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1 );
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+#btnAjouter:enabled:hover {
+    -fx-background-color: linear-gradient(#de1414, #840808);
+    -fx-background-insets: 0 0 -1 0;
+    -fx-background-radius: 0;
+    -fx-translate-y: -1;
+    -fx-translate-x: 1;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+    -fx-border-width: 0.5;
+    -fx-border-color: #c10d0d;
+}
+
