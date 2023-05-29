@@ -1,0 +1,284 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body class="page-body">
+
+
+
+<!-- Start Main Content -->
+<main class="main-content">
+
+
+
+    <!-- Start Content Area -->
+    <div class="content-section text-light pt-8">
+        <div class="container">
+            <div class="row gutters-y">
+                <div class="col-12">
+                    <header>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb-product breadcrumb-nowrap breadcrumb breadcrumb-angle bg-transparent pl-0 pr-0 mb-0">
+                                <li class="breadcrumb-item"><a href="#">Store</a></li>
+                                <li class="breadcrumb-item"><a href="{{path('app_product') }}" style="color: purple">Jeux & Materiel</a></li>
+                                <li class="breadcrumb-item active" aria-current="page" style="color: rebeccapurple">{{ p.nom }}</li>
+                            </ol>
+                        </nav>
+                        <h3 class="product_name mb-4">{{ p.nom }}</h3>
+
+                    </header>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="product-body">
+                                <!--Carousel Wrapper-->
+                                <div class="carousel-product">
+                                    <div class="slider text-secondary" data-slick="product-body">
+                                        <img src="{{asset('imageProduits/'~p.image)}}" alt="Game">
+
+                                    </div>
+
+                                </div>
+                                <!--/.Carousel Wrapper-->
+
+
+
+
+                                <div class="mb-6">
+                                    <h6 class="mb-0 fw-400 ls-1 text-uppercase">PLUS COMME ÇA</h6>
+                                    <hr class="border-secondary my-2">
+                                    <div>
+                                        <div class="owl-carousel carousel_sm" data-carousel-items="1, 2, 3, 3" data-carousel-margin="10" data-carousel-nav="false" data-carousel-dots="true">
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg-c_01.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Akamen</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg-c_02.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Punk City</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg-c_03.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Transaction</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg_04.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Golden Mask</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg_05.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">ONI</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg_06.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Engineer</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-t ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg_07.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Informant</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg_08.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Haku</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <div class="d-flex h-100 bs-c br-n bp-c ar-8_5 position-relative" style="background-image: url(assets/img/content/cont/cg-c_02.jpg);">
+                                                        <div class="position-absolute w-100 l-0 b-0 bg-dark_A-80 text-light">
+                                                            <div class="px-4 py-3 lh-1">
+                                                                <h6 class="mb-1 small-1 text-light text-uppercase">Punk City</h6>
+                                                                <div class="price d-flex flex-wrap align-items-center">
+                                                                    <span class="discount_final text-warning small-2">€99.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-dark_A-20 p-4 mb-4">
+                        <p> {{ p.description }} </p>
+                        <div class="price-wrapper">
+                            <div class="mb-3">
+                                <div class="price">
+                                   <!-- <div class="price-prev">300$</div>-->
+                                    <div class="price-current" style="color: purple">{{ p.prix }} <img src="{{ asset('back_office/kamell.png') }}" alt="coin" style="width: 16px; height: 16px;"></div>
+                                </div>
+                                <!--<div class="discount">
+                                    Save: $20.00 (33%)
+                                </div>-->
+                            </div>
+                            <div class="price-box mb-4">
+                                <div class="mr-4">
+
+                                </div>
+
+
+                               {% if etat %}
+                                <div class="flex-1"><a href=" {{path('supprimer_du_panierB', {'id': p.id }) }} " class="btn btn-block btn-danger"><i class="fas fa-cart-arrow-down"></i> Retiré du Panier</a></div>
+                               {% else %}
+                                <div class="flex-1"><a href=" {{path('ajoutpanier', {'id': p.id }) }} " class="btn btn-block btn-warning"><i class="fas fa-shopping-cart"></i> Ajouter au Panier</a></div>
+                                {% endif %}
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--<div class="bg-dark_A-20 p-4">
+                        <h6 class="mb-3">Information du jeu</h6>
+                        <hr class="border-secondary mt-2 mb-4">
+                        <ul class="list-unstyled mb-3">
+                            <li>
+                                <span class="platform">Platform:</span>
+                                <span class="platform-item btn btn-sm btn-outline-warning"><i class="fab fa-windows"></i> PC</span>
+                                <span class="platform-item btn btn-sm btn-outline-warning"><i class="fas fa-apple-alt"></i> mac</span>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled mb-3">
+                            <li class="developer-wrapper d-flex">
+                                <a href="#" class="developer">Developer:</a>
+                                <a href="#" class="developer-item text-lt btn btn-sm btn-secondary">ALIQUAM Erat Volutpat</a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled small-2 mb-3">
+                            <li class="developer-wrapper">
+                                <a href="#" class="developer">Genres:</a>
+                                <a href="#">Indie</a>,
+                                <a href="#">Simulation</a>,
+                                <a href="#">Strategy</a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled small-2 mb-3">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Content Area -->
+
+</main>
+
+
+
+
+
+<!-- /.offcanvas-cart -->
+
+<!-- jQuery -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- User JS -->
+<script src="assets/js/scripts.js"></script>
+
+<!-- Main JS -->
+<script src="assets/js/main.js" id="_mainJS" data-plugins="load"></script>
+</body>
+
+<!-- Mirrored from scanthemes.com/demo/HTML/wicodus/store-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Feb 2023 16:08:23 GMT -->
+</html>
+
+
+
+
+
+{% endblock %}

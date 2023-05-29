@@ -1,0 +1,14 @@
+
+
+{% block content %}
+    <h1>Mes groupes</h1>
+    {% if groupes is not empty %}
+        <ul>
+            {% for groupe in groupes %}
+                <li><a href="{{ path('onegroupe', {'id': groupe.getId}) }}">{{ groupe.nomgroupe }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Vous n'avez pas encore rejoint de groupe.</p>
+    {% endif %}
+{% endblock %}
