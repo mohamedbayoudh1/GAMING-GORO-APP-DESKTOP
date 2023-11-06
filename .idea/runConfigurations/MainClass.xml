@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="MainClass" type="Application" factoryName="Application">
-    <module name="WorkshopJDBC3A37" />
-    <option name="VM_PARAMETERS" value="--module-path C:\Users\bayou\Desktop\javafx-sdk-17.0.6\lib --add-modules javafx.controls,javafx.fxml" />
-    <method v="2">
-      <option name="Make" enabled="true" />
-    </method>
-  </configuration>
-</component>
