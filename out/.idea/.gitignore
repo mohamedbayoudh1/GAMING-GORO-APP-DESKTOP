@@ -6,3 +6,41 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# NetBeans-specific files 
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+/test_data/
+/table_data/
+/chart/
+/test/
+/src/
+/out/
+/nbproject/
+
+### VS Code ###
+.vscode/
